@@ -1,0 +1,50 @@
+1. "/mp3" endpoint
+usage example: http://localhost:1234/mp3 <-- click to see it work :O
+sends user mp3 file
+
+2. "/pdf" endpoint
+usage example: http://localhost:1234/pdf
+sends user pdf file
+
+3. "/:img" endpoint
+usage example: http://localhost:1234/gamingstuff.jpg
+sends user image file
+valid ':img' parameters:
+-gamingstuff.jpg
+-image.png
+-fredrickfitzgeraldfazbearington.jpg
+
+4. "/file/:filename" endpoint
+usage example: http://localhost:1234/file/realcoolstuff.html
+sends user any of the available files from the "assets" folder
+valid ':filename' parameters:
+-gamingstuff.jpg
+-image.png
+-fredrickfitzgeraldfazbearington.jpg
+-realcoolstuff.html
+-The_Art_Of_War.pdf
+-omg.mp3
+-gamer.txt
+
+5. "/objects" endpoint
+usage example: http://localhost:1234/objects
+sends user list of all objects from the "data" folder
+
+6. "/objects/:type" endpoint
+usage example: http://localhost:1234/objects/thing
+sends user list of all objects of the specified type
+valid ':type' parameters:
+-thing
+-person
+-individual
+
+7. "/objects/:type/:id" endpoint
+usage example: http://localhost:1234/objects/thing/7
+sends user object of of the specified type and id
+valid ':type' and ':id' parameters:
+-person/id (id can be from 0 to 2)
+-individual (id can be from 3 to 5)
+-thing/id (id can be from 6 to 7)
+
+8. "/info" endpoint
+the functionality of this endpoint remains a mistery
