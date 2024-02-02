@@ -44,9 +44,6 @@ app.get('/file/:filename', sendFile);
 app.get('/objects/:type', sendObjectsType);
 app.get('/objects/:type/:id', sendObjectsTypeId);
 
-//app.get('/mp3', sendMp3); //I think when I try to get mp3 from postman 
-//it doesn't even go to this endpoint. Don't fuckin know how to fix it, will fuck around and find out I guess
-//give examples of inputs for endpoints in /info
 
 app.listen(port, () => {
     console.log(`Server is running on localhost: ${port}`);
